@@ -6,6 +6,7 @@ services:
     container_name: mysqldb
     environment:
       - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
       - MYSQL_DATABASE=achatdb
     ports:
       - 3306:3306
@@ -13,6 +14,7 @@ services:
       - db:/var/lib/mysql
 
   app:
+    build: .
     depends_on:
       - mysqldb
     image: amirlaroussi/achat-1.0.jar
