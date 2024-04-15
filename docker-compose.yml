@@ -24,9 +24,9 @@ services:
       - '8082:8082'
     environment:
       SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url": "jdbc:mysql://mysqldb:3306/achatdb?createDatabaseIfNotExist=true",
+        "spring.datasource.url": "jdbc:mysql://152.228.135.167:3306/achatdb?createDatabaseIfNotExist=true",
         "spring.datasource.username": "root",
-        "spring.datasource.password": null,
+        "spring.datasource.password": "Dgfiop2023++",
         "spring.jpa.properties.hibernate.dialect": "org.hibernate.dialect.MySQL5InnoDBDialect",
         "spring.jpa.hibernate.ddl-auto": "update"
       }'
